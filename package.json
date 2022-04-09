@@ -1,0 +1,21 @@
+{
+    "name": "com.zun010.ecsmonolinks",
+    "author": "Zun010",
+    "displayName": "LeoEcsMonoLinks",
+    "description": "An easy-to-use conversion workflow for the LeoECS framework.",
+    "unity": "2020.3",
+    "version": "1.0.0",
+    "keywords": [
+        "leoecs",
+        "ecs",
+        "extensions",
+        "monolinks"
+    ],
+    "dependencies": {
+        "com.leopotam.ecs": "https://github.com/Leopotam/ecs.git"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zun010/ecs-mono-links.git"
+    }
+}
