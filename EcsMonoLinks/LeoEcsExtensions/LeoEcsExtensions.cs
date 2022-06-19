@@ -1,4 +1,5 @@
 using Leopotam.Ecs;
+using UnityEngine;
 
 namespace Zun010.LeoEcsExtensions
 {
@@ -34,6 +35,15 @@ namespace Zun010.LeoEcsExtensions
             entity.Replace(component);
 
             return entity;
+        }
+        
+        public static ref T Req<T>(this ref EcsEntity entity)
+            where T : struct
+        {
+            if (!entity.Has<T>())
+                throw new MissingComponentException($"Entity has no {typeof(T)} component.");
+
+            return ref entity.Get<T>();
         }
     }
 }
