@@ -37,7 +37,7 @@ namespace Zun010.LeoEcsExtensions
             return entity;
         }
         
-        public static ref T Req<T>(this ref EcsEntity entity)
+        public static ref T Req<T>(this in EcsEntity entity)
             where T : struct
         {
             if (!entity.Has<T>())
